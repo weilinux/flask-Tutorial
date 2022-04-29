@@ -5,9 +5,13 @@
     <title>Home</title>
 </head>
 <body>
-<div><h1>Home Page</h1></div>
-<div><h2>Hello,  {{ name }}, {{ field }}</h2></div>
+<h1>something common</h1>
+{% block content %}
+    <div><h1>Home Page</h1></div>
+    <div><h2>Hello,  {{ name }}, {{ field }}</h2></div>
+{% endblock %}
 
-
+<script type="text/javascript" src="{{ url_for('static', filename='index.js')}}">
+</script>
 </body>
 </html>
